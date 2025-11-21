@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold" routerLink="/">
+            <span class="brand-highlight">Biz</span> Directory
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link cool-link" [routerLink]="'/'" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link cool-link" [routerLink]="'/Businesses'" routerLinkActive="active">
+                        Businesses
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

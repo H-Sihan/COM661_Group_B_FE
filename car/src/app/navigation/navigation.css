@@ -1,0 +1,41 @@
+.custom-navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.7rem 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Highlight */
+.brand-highlight {
+    color: #0d6efd;
+    font-weight: 800;
+}
+
+/* Cool animated underline */
+.cool-link {
+    position: relative;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+.cool-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #0d6efd;
+    transition: 0.3s ease;
+}
+
+.cool-link:hover::after,
+.cool-link.active::after {
+    width: 100%;
+}
+
+/* Slightly larger toggler icon */
+.navbar-toggler-icon {
+    filter: brightness(0.3);
+}
